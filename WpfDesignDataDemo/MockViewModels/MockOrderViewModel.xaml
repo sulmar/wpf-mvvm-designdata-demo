@@ -10,6 +10,20 @@
                     </Customer.Location>
                 </Customer>
             </Order.Customer>
+
+            <Order.OrderDetails>
+                <OrderDetail Id="1" Quantity="2" UnitPrice="50">
+                    <OrderDetail.Item>
+                        <Product Name="Atari 800XL" Weight="4" Price="50" />
+                    </OrderDetail.Item>
+                    </OrderDetail>
+                <OrderDetail Id="1" Quantity="1" UnitPrice="10">
+                    <OrderDetail.Item>
+                        <Service Name="Atari 800XL" WorkTime="00:30:00" Price="10" />
+                    </OrderDetail.Item>
+                </OrderDetail>
+
+            </Order.OrderDetails>
         </Order>
     </vm:OrderViewModel.Order>
     

@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfDesignDataDemo.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="300" d:DesignWidth="500"
       d:DataContext="{d:DesignData Source=/MockViewModels/MockOrderViewModel.xaml}"
       Title="OrderView">
 
@@ -16,6 +16,14 @@
 
             <TextBox Text="{Binding Order.Customer.FirstName}" />
             <TextBox Text="{Binding Order.Customer.LastName}" />
+
+            <DataGrid ItemsSource="{Binding Order.OrderDetails}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nazwa" Binding="{Binding Item.Name}" />
+                    <DataGridTextColumn Header="Ilość" Binding="{Binding Quantity}" />
+                    <DataGridTextColumn Header="Cena" Binding="{Binding UnitPrice}" />
+                </DataGrid.Columns>
+            </DataGrid>
 
         </StackPanel>
         
