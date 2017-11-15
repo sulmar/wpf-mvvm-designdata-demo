@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,5 +11,9 @@ namespace WpfDesignDataDemo.Models
         public string Number { get; set; }
 
         public Customer Customer { get; set; }
+
+        public OrderDetails OrderDetails { get; set; }
+
+        public decimal TotalAmount => OrderDetails.TotalAmount;
     }
 }
