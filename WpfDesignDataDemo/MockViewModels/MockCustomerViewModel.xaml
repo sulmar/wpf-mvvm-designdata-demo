@@ -4,7 +4,9 @@
     >
 
     <vm:CustomerViewModel.Customer>
-        <Customer Id="5" FirstName="Marcin" LastName="Sulecki">
+        <Customer Id="5" FirstName="Marcin" LastName="Sulecki"
+                  CreatedDate="2017-10-15 15:00"
+                  >
             <Customer.Location>
                 <Location Latitude="51.04" Longitude="21.05" />
             </Customer.Location>

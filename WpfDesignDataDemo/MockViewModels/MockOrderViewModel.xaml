@@ -1,0 +1,16 @@
+﻿<vm:OrderViewModel xmlns:vm="clr-namespace:WpfDesignDataDemo.ViewModels"
+                   xmlns="clr-namespace:WpfDesignDataDemo.Models">
+
+    <vm:OrderViewModel.Order>
+        <Order Id="1" Number="001/2017">
+            <Order.Customer>
+                <Customer Id="1" FirstName="Marcin" LastName="Sulecki">
+                    <Customer.Location>
+                        <Location Latitude="52.05" Longitude="21.32"/>
+                    </Customer.Location>
+                </Customer>
+            </Order.Customer>
+        </Order>
+    </vm:OrderViewModel.Order>
+    
+</vm:OrderViewModel>

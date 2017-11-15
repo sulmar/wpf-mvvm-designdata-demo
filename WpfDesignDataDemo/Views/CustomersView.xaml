@@ -16,17 +16,31 @@
     </Page.DataContext>
 
     <Grid>
-        <ListBox ItemsSource="{Binding Customers}" >
-            <ListBox.ItemTemplate>
-                <DataTemplate DataType="{x:Type m:Customer}">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox Text="{Binding FirstName}" />
-                        <TextBox Text="{Binding LastName}" />
-                        <TextBox Text="{Binding Location.Latitude}" />
-                        <TextBox Text="{Binding Location.Longitude}" />
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+
+        <StackPanel>
+
+            <DataGrid ItemsSource="{Binding Customers}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding FirstName}" />
+                    <DataGridHyperlinkColumn Binding="{Binding LastName}" />
+                    <DataGridCheckBoxColumn Binding="{Binding IsDeleted}" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <ListBox ItemsSource="{Binding Customers}" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate DataType="{x:Type m:Customer}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Text="{Binding FirstName}" />
+                            <TextBox Text="{Binding LastName}" />
+                            <TextBox Text="{Binding Location.Latitude}" />
+                            <TextBox Text="{Binding Location.Longitude}" />
+                            <CheckBox IsChecked="{Binding IsDeleted}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+        </StackPanel>
     </Grid>
 </Page>

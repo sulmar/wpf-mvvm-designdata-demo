@@ -15,5 +15,9 @@ namespace WpfDesignDataDemo.Models
         public string LastName { get; set; }
 
         public Location Location { get; set; }
+
+        public DateTime CreatedDate { get; set; }
+
+        public bool IsDeleted { get; set; }
     }
 }

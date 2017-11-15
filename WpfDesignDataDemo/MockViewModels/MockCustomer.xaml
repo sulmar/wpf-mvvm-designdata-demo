@@ -1,5 +1,8 @@
 ﻿<Customer xmlns="clr-namespace:WpfDesignDataDemo.Models"
-          Id="4" FirstName="Marcin" LastName="Sulecki"  >
+          Id="4" FirstName="Marcin" LastName="Sulecki" 
+          IsDeleted="True"
+          CreatedDate="2017-10-15 15:00"
+          >
     
     <Location Latitude="54" Longitude="21" />
 

@@ -22,6 +22,8 @@
             <TextBox Text="{Binding Customer.LastName}" />
             <Label Content="{Binding Customer.Location.Latitude}" />
             <Label Content="{Binding Customer.Location.Longitude}" />
+            <Label Content="{Binding Customer.CreatedDate}" />
+            <DatePicker DisplayDate="{Binding Customer.CreatedDate}" />
         </StackPanel>
 
         
