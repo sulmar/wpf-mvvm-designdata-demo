@@ -9,7 +9,7 @@ using WpfDesignDataDemo.Models;
 
 namespace WpfDesignDataDemo.ViewModels
 {
-    public class CustomersViewModel
+    public class CustomersViewModel : BaseViewModel
     {
         public Customers Customers { get; set; }
 
