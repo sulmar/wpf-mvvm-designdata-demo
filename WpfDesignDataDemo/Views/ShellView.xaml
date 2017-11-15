@@ -6,9 +6,17 @@
         xmlns:v="clr-namespace:WpfDesignDataDemo.Views"
         mc:Ignorable="d"
         Title="ShellView" Height="300" Width="300">
+
+    <Window.Resources>
+        <v:CustomersView x:Key="CustomersView" />
+    </Window.Resources>
+
+
+    
     <Grid>
 
-        <v:CustomerView />
+        <Frame Content="{StaticResource CustomersView}" />
+
 
         <!--<v:CustomersView />-->
 
