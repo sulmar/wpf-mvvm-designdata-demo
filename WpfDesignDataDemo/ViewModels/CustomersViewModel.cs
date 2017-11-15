@@ -9,18 +9,19 @@ using WpfDesignDataDemo.Models;
 
 namespace WpfDesignDataDemo.ViewModels
 {
-    public class CustomerViewModel
+    public class CustomersViewModel
     {
-        public Customer Customer { get; set; }
+        public Customers Customers { get; set; }
 
         private readonly ICustomersService customersService;
 
-        public CustomerViewModel()
-                : this(new DbCustomersService())
+        public CustomersViewModel()
+            : this(new DbCustomersService())
         {
+
         }
 
-        public CustomerViewModel(ICustomersService customersService)
+        public CustomersViewModel(ICustomersService customersService)
         {
             this.customersService = customersService;
 
@@ -29,7 +30,7 @@ namespace WpfDesignDataDemo.ViewModels
 
         private void Load()
         {
-            Customer = customersService.Get(1);
+            Customers = customersService.Get();
         }
     }
 }

@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfDesignDataDemo.Models
 {
-    public class Order : Base
+    public class Customers : List<Customer>
     {
-        public int Id { get; set; }
-
-        public string Number { get; set; }
-
-        public Customer Customer { get; set; }
     }
 }

@@ -10,5 +10,7 @@
 
         <v:CustomerView />
 
+        <!--<v:CustomersView />-->
+
     </Grid>
 </Window>
