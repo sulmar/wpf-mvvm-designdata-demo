@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfDesignDataDemo
+namespace WpfDesignDataDemo.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CustomerView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CustomerView : Page
     {
-        public MainWindow()
+        public CustomerView()
         {
             InitializeComponent();
         }

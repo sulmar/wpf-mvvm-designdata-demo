@@ -1,0 +1,4 @@
+﻿
+    
+    <Customer xmlns="clr-namespace:WpfDesignDataDemo.Models"
+          Id="2" FirstName="Marcin" LastName="Sulecki" />

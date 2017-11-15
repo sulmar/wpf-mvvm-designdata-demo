@@ -1,0 +1,10 @@
+﻿<vm:CustomerViewModel 
+    xmlns:vm="clr-namespace:WpfDesignDataDemo.ViewModels"
+    xmlns="clr-namespace:WpfDesignDataDemo.Models"
+    >
+
+    <vm:CustomerViewModel.Customer>
+        <Customer Id="3" FirstName="Marcin" LastName="Sulecki" />
+    </vm:CustomerViewModel.Customer>
+        
+</vm:CustomerViewModel>
