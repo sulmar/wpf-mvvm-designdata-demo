@@ -20,6 +20,8 @@
             <Label Content="{Binding Customer.Id}" />
             <TextBox Text="{Binding Customer.FirstName}" />
             <TextBox Text="{Binding Customer.LastName}" />
+            <Label Content="{Binding Customer.Location.Latitude}" />
+            <Label Content="{Binding Customer.Location.Longitude}" />
         </StackPanel>
 
         

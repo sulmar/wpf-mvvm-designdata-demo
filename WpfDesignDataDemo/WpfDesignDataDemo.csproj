@@ -57,6 +57,7 @@
     <Compile Include="DbServices\DbCustomersService.cs" />
     <Compile Include="IServices\ICustomersService.cs" />
     <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="ViewModels\CustomersViewModel.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
     <Compile Include="Views\CustomersView.xaml.cs">

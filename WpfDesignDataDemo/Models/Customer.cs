@@ -13,5 +13,7 @@ namespace WpfDesignDataDemo.Models
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
+
+        public Location Location { get; set; }
     }
 }
